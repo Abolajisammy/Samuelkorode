@@ -1,4 +1,40 @@
+/* --- CONFIGURATION --- */
+:root {
+  /* CHANGE THIS HEX CODE to match your portfolio theme */
+  --theme-color: #c9a86a; /* Currently set to a Gold/Bronze tone */
+  --icon-size: 24px;
+}
 
+/* --- LAYOUT STYLES --- */
+.portfolio-icons-container {
+  display: flex;
+  justify-content: center; /* Centers icons horizontally */
+  align-items: center;
+  gap: 25px; /* Space between icons */
+  padding: 20px 0;
+}
+
+.icon-item {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  display: inline-flex;
+}
+
+/* --- ICON COLOR & THEME --- */
+.icon-item i {
+  font-size: var(--icon-size);
+  color: var(--theme-color); /* Applies your theme color */
+  transition: opacity 0.3s ease;
+}
+
+/* --- HOVER EFFECTS --- */
+.icon-item:hover {
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.icon-item:hover i {
+  opacity: 0.8; /* Slight fade on hover */
+}
 
         @font-face {
             font-family: roboto;
@@ -910,4 +946,5 @@
                 line-height: 30px;
             }
         }
+
 
