@@ -1018,6 +1018,28 @@ a {
     max-width: 400px;
     margin-bottom: 2rem;
 }
+.contact-details a {
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: var(--accent-color);
+}
+
+.contact-socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-socials a svg {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    flex-shrink: 0;
+    display: block;
+}
 
 .contact-socials {
     display: flex;
